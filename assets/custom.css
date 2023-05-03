@@ -452,3 +452,31 @@ pre code {
 .highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .highlight .vm { color: #f8f8f2 } /* Name.Variable.Magic */
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+/* ============================ EXTERNAL CSS ============================ */
+
+/* 
+live2d 
+origin repo: https://github.com/stevenjoezhang/live2d-widget
+以下改动为了让其靠页面右侧右对齐。
+*/
+#waifu-toggle.waifu-toggle-active {
+    margin-left: unset;
+    margin-right: -42px;
+}
+#waifu-toggle.waifu-toggle-active:hover {
+    margin-left: unset;
+	margin-right: -30px;
+}
+#waifu-toggle{
+    left: unset;
+    margin-left: unset;
+    right: 0;
+    margin-right: -100px;
+    transition: margin-right 1s;
+    writing-mode: vertical-lr;
+}
+#waifu {
+    left: unset;
+    right: 24px;
+}

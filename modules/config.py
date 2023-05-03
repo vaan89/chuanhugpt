@@ -24,7 +24,8 @@ __all__ = [
     "server_name",
     "server_port",
     "share",
-    "hide_history_when_not_logged_in"
+    "hide_history_when_not_logged_in",
+    "live2d",
 ]
 
 # 添加一个统一的config文件，避免文件过多造成的疑惑（优先级最低）
@@ -184,3 +185,6 @@ except ValueError:
     pass
 
 share = config.get("share", False)
+
+# 设置toys
+live2d = config.get("toys", {}).get("live2d", False)
